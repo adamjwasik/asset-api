@@ -1,0 +1,59 @@
+1. Java Persistence API (JPA)
+-----------------------------
+
+Source: http://www.vogella.com/tutorials/JavaPersistenceAPI/article.html
+
+1.1. Overview
+-------------
+- Mapping Java objects to database tables and vice versa is called Object-relational mapping (ORM). The Java Persistence 
+API (JPA) is one possible approach to ORM. 
+
+- Via JPA the developer can map, store, update and retrieve data from relational databases to Java objects and vice 
+versa. JPA can be used in Java-EE and Java-SE applications.
+
+- Popular implementations are Hibernate, EclipseLink and Apache OpenJPA
+
+- JPA permits the developer to work directly with objects rather than with SQL statements. The JPA implementation 
+is typically called persistence provider.
+
+- The mapping between Java objects and database tables is defined via persistence metadata.
+JPA metadata is typically defined via annotations in the Java class. Alternatively, the metadata can be defined via 
+XML or a combination of both. A XML configuration overwrites the annotations.
+
+1.2 Entity
+-----------
+javax.persistence.Entity 	-	class which should be persisted in a database it must be annotated @Entity.
+							-	JPA uses a database table for every entity. Persisted instances of the class 
+								will be represented as one row in the table.
+							-	All entity classes must define a primary key, must have a non-arg constructor and or not allowed to be final. 
+							
+1.3 Persistence of fields
+-------------------------
+- The fields of the Entity will be saved in the database. JPA can use either your instance variables (fields) or 
+the corresponding getters and setters to access the fields. You are not allowed to mix both methods. 
+-  JPA persists per default all fields of an Entity, if fields should not be saved they must be marked with @Transient.
+
+@Id				Identifies the unique ID of the database entry
+@GeneratedValue	Together with an ID this annotation defines that this value is generated automatically.
+@Transient		Field will not be saved in database
+
+
+1.4. Relationship Mapping
+-----------------------------
+- JPA allows to define relationships between classes
+- Classes can have one to one, one to many, many to one, and many to many relationships with other classes.
+
+Relationship annotations:
+@OneToOne
+@OneToMany
+@ManyToOne
+@ManyToMany
+
+
+1.5. Entity Manager
+-------------------
+javax.persistence.EntityManager 	-	provides the operations from and to the database
+
+- The persistence context describes all Entities of one Entity manager.
+
+
