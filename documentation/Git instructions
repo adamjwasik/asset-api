@@ -1,0 +1,52 @@
+https://github.com/adamjwasik/asset-api.git
+
+push an existing repository from the command line
+git remote add origin https://github.com/adamjwasik/asset-api.git
+git push -u origin master
+
+
+
+-------
+
+
+Adams-MacBook-Pro:asset-api adam$ git init
+Initialized empty Git repository in /develop/workspace/asset-api/.git/
+Adams-MacBook-Pro:asset-api adam$ 
+Adams-MacBook-Pro:asset-api adam$ ls -a
+.		.git		.project	mvnw		pom.xml
+..		.gitignore	.settings	mvnw.cmd	src
+.classpath	.mvn		documentation	pom-081219.xml	target
+Adams-MacBook-Pro:asset-api adam$ 
+Adams-MacBook-Pro:asset-api adam$ git add .
+Adams-MacBook-Pro:asset-api adam$ git commit -m "First Commit"
+[master (root-commit) 3989409] First Commit
+ 28 files changed, 841 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .mvn/wrapper/maven-wrapper.jar
+ create mode 100644 .mvn/wrapper/maven-wrapper.properties
+ create mode 100644 documentation/Git instructions
+ create mode 100644 documentation/Java Persistence API (JPA)
+ create mode 100644 documentation/diagrams/mvc-architecture.jpg
+ create mode 100755 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom-081219.xml
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/portfoliomanagement/AssetManagerApplication.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/Account.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/AppreciableAssets/Appreciation Entity Notes
+ create mode 100644 src/main/java/com/portfoliomanagement/model/AppreciableAssets/Equity.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/AppreciableAssets/GovBond.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/AppreciableAssets/House.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/Asset.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/DepreciableAssets/Appliances.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/DepreciableAssets/Car.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/DepreciableAssets/Furniture.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/Life/BalanceSheet.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/Portfolio.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/Position.java
+ create mode 100644 src/main/java/com/portfoliomanagement/model/Trade.java
+ create mode 100644 src/main/java/com/portfoliomanagement/repository/AssetRepository.java
+ create mode 100644 src/main/java/com/portfoliomanagement/service/AssetLoad.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/test/java/com/portfoliomanagement/assetapi/AssetApiApplicationTests.java
+Adams-MacBook-Pro:asset-api adam$ 
